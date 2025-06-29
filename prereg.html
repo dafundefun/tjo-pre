@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="太極Online">
+    <meta name="description" content="《太極Online》是一款武俠背景的MMORPG，玩家可以從武當、峨嵋、丐幫、明教四大門派中擇一加入，跟隨主線劇情行俠仗義，剷惡除奸，體驗快意恩仇的江湖生活。">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="太極Online">
+    <meta property="og:description" content="《太極Online》是一款武俠背景的MMORPG，玩家可以從武當、峨嵋、丐幫、明教四大門派中擇一加入，跟隨主線劇情行俠仗義，剷惡除奸，體驗快意恩仇的江湖生活。">
+    <meta property="og:image" content="img/cm/thumbnail.jpg">
+    <title>太極Online</title>
+    <link rel="icon" href="img/logos/favicon.ico" type="img/ico" />
+    <link rel="shortcut icon" href="img/logos/favicon.ico" type="img/ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yuji+Boku&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/style.css?v2">
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-PB8RXNM');
+    </script>
+    <!-- End Google Tag Manager -->
+
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PB8RXNM" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v20.0"
+        nonce="zIU2r1gt"></script>
+    <div class="menuLgSwitch btn right"></div>
+    <div class="menuLg flexColumnSpace">
+        <div class="logo">
+            <img src="img/menu/main_logo.png" alt="">
+        </div>
+        <ul class="list h3">
+            <li class="link">
+                <div class="btn" id="2">
+                    <span class="leftLine">
+                        <img src="img/menu/menuL.svg" alt="">
+                    </span>
+                    俠客召集
+                    <span class="rightLine">
+                        <img src="img/menu/menuR.svg" alt="">
+                    </span>
+                </div>
+            </li>
+            <li class="link">
+                <div class="btn" id="3">
+                    <span class="leftLine">
+                        <img src="img/menu/menuL.svg" alt="">
+                    </span>
+                    聚精煉神
+                    <span class="rightLine">
+                        <img src="img/menu/menuR.svg" alt="">
+                    </span>
+                </div>
+            </li>
+            <li class="link">
+                <div class="btn" id="4">
+                    <span class="leftLine">
+                        <img src="img/menu/menuL.svg" alt="">
+                    </span>
+                    四大門派
+                    <span class="rightLine">
+                        <img src="img/menu/menuR.svg" alt="">
+                    </span>
+                </div>
+            </li>
+            <li class="link">
+                <div class="btn" id="5">
+                    <span class="leftLine">
+                        <img src="img/menu/menuL.svg" alt="">
+                    </span>
+                    遊戲特色
+                    <span class="rightLine">
+                        <img src="img/menu/menuR.svg" alt="">
+                    </span>
+                </div>
+            </li>
+            <li class="link">
+                <div class="btn">
+                    <span class="leftLine">
+                        <img src="img/menu/menuL.svg" alt="">
+                    </span>
+                    <a href="/obt">火熱公測</a>
+                    <span class="rightLine">
+                        <img src="img/menu/menuR.svg" alt="">
+                    </span>
+                </div>
+            </li>
+        </ul>
+        <div class="snsLink">
+            <ul>
+                <li><a href="https://www.facebook.com/DiGeamTJO" target="_blank"><img src="/img/menu/menu_fb.svg"
+                            alt=""></a></li>
+                <li><a href="https://forum.gamer.com.tw/A.php?bsn=80593" target="_blank"><img
+                            src="/img/menu/menu_bh.svg" alt="">巴哈姆特</a></li>
+            </ul>
+        </div>
+    </div>
+    <header class="header">
+        <div class="menuSm">
+            <div class="logo">
+                <img src="img/menu/main_logo.png" alt="">
+                <div class="btn burgerIcon">
+                    <div class="menuTop"></div>
+                    <div class="menuCenter"></div>
+                    <div class="menuBottom"></div>
+                </div>
+            </div>
+            <div class="list">
+                <ul class="innerLink h4">
+                    <li id="n2">俠客召集</li>
+                    <li id="n3">聚精煉神</li>
+                    <li id="n4">四大門派</li>
+                    <li id="n5">遊戲特色</li>
+                    <li><a href="/obt">火熱公測</a></li>
+                </ul>
+                <ul class="snsLink">
+                    <li><a href="https://www.facebook.com/DiGeamTJO" targrt="_blank"><img src="img/menu/menu_fb_w.svg"
+                                alt=""></a></li>
+                    <li><a href="https://forum.gamer.com.tw/A.php?bsn=80593" targrt="_blank"><img
+                                src="img/menu/menu_bh_w.svg" alt="">巴哈姆特</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="section" id="section1">
+        <div class="logo">
+            <img src="img/menu/main_logo.png" alt="">
+        </div>
+        <div class="title">
+            <img src="img/title/main_title.png" alt="" class="pc">
+            <img src="img/title/main_title_m.png" alt="" class="mobile">
+        </div>
+        <div class="arrowDown">
+        </div>
+    </div>
+    <div class="section" id="section2">
+        <div class="container">
+            <div class="title"><img src="/img/title/title-1.png" alt=""></div>
+            <div class="content">
+                <ul class="form">
+                    <li>
+                        <!-- <div class="serial"><img src="/img/title/sec2_nb1.svg" alt=""></div>
+                        @if (isset($_COOKIE['StrID']) && isset($_COOKIE['StrID']) != null)
+                            <form id="logout-form" action="https://www.digeam.com/logout" method="POST"
+                                style="display: none;">
+                                <input type="hidden" name="return_url" id="return_url"
+                                    value={{ base64_encode('https://tjo.digeam.com/prereg') }}>
+                            </form>
+                            {{-- 登入後顯示 --}}
+                            <label for="" class="logOut">
+                                <span>
+                                    <span class="normal"><strong class="b" id="userId">{{ $_COOKIE['StrID'] }}</strong> 您好</span>
+                                    <div class="btnRouded btn" id="logInBtn" onclick="logout_dg()">登出</div>
+                                </span>
+                            </label>
+                        @else -->
+                            <label for="" class="login">
+                                <span>註冊並登入 <i class="normal">DiGeam</i> 掘夢網平台帳號</span>
+                                <div class="btnGroup">
+                                    <div class="btnRouded" id="signUpBtn"><a
+                                            href="https://www.digeam.com/register_tjo" target="_blank">註冊</a></div>
+                                    <div class="btnRouded" id="logInBtn"><a
+                                            href="https://www.digeam.com/login">登入</a></div>
+                                </div>
+                            </label>
+                        <!-- @endif -->
+                    </li>
+                    <li>
+                        <div class="serial"><img src="/img/title/sec2_nb2.svg" alt=""> </div>
+                        <label for="">
+                            填寫手機號碼，並同意接收遊戲相關資訊
+                            <div class="formPhone" id="userArea">
+                                <select name="" id="">
+                                    <option value="+886">台灣 +886</option>
+                                    <option value="+852">香港 +852</option>
+                                    <option value="+853">澳門 +853</option>
+                                </select>
+                                <input type="tel" placeholder="912345678" id="userPhone">
+                            </div>
+                        </label>
+                    </li>
+                    <li>
+                        <div class="serial"><img src="/img/title/sec2_nb3.svg" alt=""></div>
+                        <label for="">
+                            <a id="fbLike" href="https://www.facebook.com/DiGeamTJO" target="_blank"><img src="img/cm/FBLink.jpg" alt=""></a>
+                            按讚官方<b class="normal">Facebook</b>粉絲團
+                        </label>
+                    </li>
+                    <li>
+                        <label for="privacy">
+                            <input type="checkbox" name="privacy" id="privacy">
+                            我已閲讀且同意<a href="https://www.digeam.com/terms2" target="_blank" class="privacyLink">隱私權政策</a>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="">
+                            <button id="bind"></button>
+                            <small class="normal btn popUpBtn" id="section2Des">活動説明</small>
+                        </label>
+                    </li>
+                </ul>
+                <div class="bn">
+                    <img src="img/cm/20240703_iPhone.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section3">
+        <div class="leftBg">
+            <div class="container">
+                <div class="title"><img src="img/title/title-2.png" alt=""></div>
+                <div class="content">
+                    <div class="left">
+                        <div class="topBn"><img src="img/cm/20240606.png" alt=""></div>
+                        <div class="stove">
+                            <img src="img/items/stove.png" alt="">
+                            <div class="gift">
+                                <div class="bg">
+                                    <img src="img/items/item_bg.png" alt="">
+                                </div>
+                                <img src="img/items/item_empty.png" alt="">
+                                <div class="giftName normal" id="giftName"></div>
+                            </div>
+                        </div>
+                        <div class="btn"></div>
+                        <p>每日中午<span class="normal">12:00</span>重置</p>
+                    </div>
+                    <div class="right">
+                        <strong class="">目前全服精力累積値</strong>
+                        <span class="h3 normal">
+                            <img src="img/bg/stove_titleBgL.svg" alt="">
+                            <span class="total" id="totalAccValue">0</span>
+                            <img src="img/bg/stove_titleBgR.svg" alt="">
+                        </span>
+                        <p class="normal">全服累積達成10000及20000精力時，加碼抽SteelSeries系列鍵盤及滑鼠！</p>
+                        <div class="list">
+                            <div class="bgTop">
+                                <div class="bgTopL">
+                                    <img src="img/items/stoveListLT.svg" alt="">
+                                </div>
+                                <div class="bgTopR">
+                                    <img src="img/items/stoveListRT.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="items">
+                                <div class="listTitle">
+                                    目前已累積注入精力次數
+                                    <strong class="b normal" id="userAccValue">0</strong>
+                                </div>
+                                <ul class="normal small">
+                                    <li>
+                                        <div class="pic">
+                                            <img src="img/items/01.png" alt="">
+                                        </div>
+                                        <div class="name">2級寶石袋x1</div>
+                                    </li>
+                                    <li>
+                                        <div class="pic">
+                                            <img src="img/items/02.png" alt="">
+                                        </div>
+                                        <div class="name">粗糙的升星強化石x1</div>
+                                    </li>
+                                    <li>
+                                        <div class="pic">
+                                            <img src="img/items/03.png" alt="">
+                                        </div>
+                                        <div class="name">特製護身符包-2星x1</div>
+                                    </li>
+                                    <li>
+                                        <div class="pic">
+                                            <img src="img/items/04.png" alt="">
+                                        </div>
+                                        <div class="name">神魂升星符x1</div>
+                                    </li>
+                                    <li>
+                                        <div class="pic">
+                                            <img src="img/items/05.png" alt="">
+                                        </div>
+                                        <div class="name">綁定元寶x100</div>
+                                    </li>
+                                    <li>
+                                        <div class="pic">
+                                            <img src="img/items/06.png" alt="">
+                                        </div>
+                                        <div class="name">初級鑒定符x1</div>
+                                    </li>
+                                    <li>
+                                        <div class="pic">
+                                            <img src="img/items/07.png" alt="">
+                                        </div>
+                                        <div class="name">粗糙青銅打孔器x1</div>
+                                    </li>
+                                    <li>
+                                        <div class="pic">
+                                            <img src="img/items/08.png" alt="">
+                                        </div>
+                                        <div class="name">粗糙寶石鑲嵌符x1</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bgBottom">
+                                <div class="bgBottomL">
+                                    <img src="img/items/stoveListLB.svg" alt="">
+                                </div>
+                                <div class="bgBottomR">
+                                    <img src="img/items/stoveListRB.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pet">
+                            <div class="pic">
+                                <img src="img/items/item_pet.png" alt="">
+                                <i class="number normal" id="countDown">餘30</i>
+                                <span class="hide" id="getPet">已獲得</span>
+                            </div>
+                            <p class="pc">個人累積注入次數達到<span class="normal">30</span>次時，可獲得永久寵物【蛋蛋】</p>
+                            <p class="mobile">
+                                個人累積注入次數達到<span class="normal">30</span>次時<br>可獲得永久寵物【蛋蛋】
+                            </p>
+                        </div>
+                        <div class="btnGroup">
+                            <div class="btn popUpBtn" id="record"></div>
+                            <div class="btn popUpBtn" id="section3Des"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section4">
+        <div class="container">
+            <div class="title"><img src="img/title/title-3.png" alt=""></div>
+            <div class="content">
+                <div class="sectBg">
+                    <img src="img/sect/bg_g.png" alt="">
+                </div>
+                <div class="center">
+                    <div class="data">
+                        <ul class="name h5">
+                            <li id="gaibangNa">
+                                <img src="img/sect/title_g.png" alt="">
+                                <p class="pc">丐幇弟子擅長肉身搏鬥，在戰鬥中勇往直前。其強大的防禦力和生命力以及無堅不摧的戰意，可令友方振奮，敵方恐懼。</p>
+                                <p class="mobile">丐幇弟子其強大的防禦力和生命力以及無堅不摧的戰意，可令友方振奮，敵方恐懼。</p>
+                            </li>
+                            <li class="sectHidden" id="wudanNa">
+                                <img src="img/sect/title_w.png" alt="">
+                                <p class="pc">武當派強調内功修練，講究以靜制動，以柔克剛，以意運氣，以氣運身，偏於陰柔，擅長群體法術攻擊，核心法術輸出。</p>
+                                <p class="mobile">武當派強調内功修練，擅長群體法術攻擊，核心法術輸出。</p>
+                            </li>
+                            <li class="sectHidden" id="emeiNa">
+                                <img src="img/sect/title_e.png" alt="">
+                                <p class="pc">峨嵋派武功介於丐幇陽剛與武當的陰柔之間。亦柔亦剛，内外向重，以弱勝強，真假虛實並用。擅長輔助型法術，核心全體輔助。</p>
+                                <p class="mobile">峨嵋派介於丐幇陽剛與武當的陰柔之間，擅長輔助型法術，核心全體輔助。</p>
+                            </li>
+                            <li class="sectHidden" id="mingjiaoNa">
+                                <img src="img/sect/title_m.png" alt="">
+                                <p class="pc">明教弟子善於近身肉搏，外功攻擊列九大門派之首。是典型的先發制人武功。爆發力強，以其一招制敵的方式獨步武林。核心是物理輸出。</p>
+                                <p class="mobile">明教弟子善於近身肉搏，以其一招制敵的方式獨步武林。核心是物理輸出。</p>
+                            </li>
+                        </ul>
+                        <ul class="caption">
+                            <li id="gaibangCa"><img src="img/sect/caption_g.svg" alt=""></li>
+                            <li class="sectHidden" id="wudanCa"><img src="img/sect/caption_w.svg" alt="">
+                            </li>
+                            <li class="sectHidden" id="emeiCa"><img src="img/sect/caption_e.svg" alt="">
+                            </li>
+                            <li class="sectHidden" id="mingjiaoCa"><img src="img/sect/caption_m.svg" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                    <ul class="character">
+                        <li id="gaibangCh"><img src="img/sect/character_g.png" alt=""></li>
+                        <li class="sectHidden" id="wudanCh"><img src="img/sect/character_w.png" alt="">
+                        </li>
+                        <li class="sectHidden" id="emeiCh"><img src="img/sect/character_e.png" alt="">
+                        </li>
+                        <li class="sectHidden" id="mingjiaoCh"><img src="img/sect/character_m.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+                <ul class="switchBtn">
+                    <li class="btn switchOn" id="gaibang"></li>
+                    <li class="btn" id="wudan"></li>
+                    <li class="btn" id="emei"></li>
+                    <li class="btn" id="mingjiao"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section5">
+        <div class="container">
+            <div class="title"><img src="img/title/title-4.png" alt=""></div>
+            <div class="content">
+                <div class="owl-carousel">
+                    <div class="">
+                        <img src="img/cm/240705_遊戲特色_01.jpg">
+                    </div>
+                    <div class="">
+                        <img src="img/cm/240705_遊戲特色_02.jpg">
+                    </div>
+                    <div class="">
+                        <img src="img/cm/240705_遊戲特色_03.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section6">
+        <div class="container">
+            <div class="fb-page pc" data-href="https://www.facebook.com/DiGeamTJO" data-tabs="timeline"
+                data-width="350" data-height="500" data-small-header="false" data-adapt-container-width="false"
+                data-hide-cover="false" data-show-facepile="true">
+                <blockquote cite="https://www.facebook.com/DiGeamTJO" class="fb-xfbml-parse-ignore"><a
+                        href="https://www.facebook.com/DiGeamTJO">DiGeam 太極</a></blockquote>
+            </div>
+            <div class="fb-page mobile" data-href="https://www.facebook.com/DiGeamTJO" data-tabs="timeline"
+                data-width="300" data-height="500" data-small-header="false" data-adapt-container-width="false"
+                data-hide-cover="false" data-show-facepile="true">
+                <blockquote cite="https://www.facebook.com/DiGeamTJO" class="fb-xfbml-parse-ignore"><a
+                        href="https://www.facebook.com/DiGeamTJO">DiGeam 太極</a></blockquote>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="top">
+            <img src="img/bg/bg_btm.png" alt="">
+        </div>
+        <div class="block">
+            <div class="container normal">
+                <a href="https://www.digeam.com/games" target="_blank"><img src="img/logos/LOGO_白.png" alt=""></a>
+                <span><img src="img/logos/CYTXLOGO.png" alt=""></span>
+                <div class="copyright small">
+                    <div class="links">
+                        <a href="https://www.digeam.com/terms" target="_blank">會員服務條款</a>
+                        <a href="https://www.digeam.com/terms2" target="_blank">隱私條款</a>
+                        <a href="https://www.digeam.com/cs" target="_blank">聯絡客服</a>
+                    </div>
+                    Copyright © 2020 ChuangYouTianXia Co.,Ltd.All rights reserve 掘夢網股份有限公司©2023Copyright©DiGeam Corporation.
+                </div>
+                <div class="small">
+                    <img src="img/logos/分級.svg" alt="輔12級">
+                    本遊戲為免費使用，部分內容涉及暴力情節。
+                    遊戲內另提供購買虛擬遊戲幣，物品等付費服務。
+                    請注意遊戲時間，避免沉迷。
+                    本遊戲服務區域包含台灣、香港、澳門。
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="popUpCover"></div>
+    <div class="popUp" id="section2DesBlock">
+        <div class="close btn">
+            <img src="img/btn/cross.svg" alt="">
+        </div>
+        <div class="title h3">
+            <p class="pc">江湖亂世，四大門派角逐勢力、為理想而戰。<br>
+                命運的戰火已點燃，唯有天命之人才能登上江湖霸主之位</p>
+            <img src="img/title/popUpTitle.svg" alt="" class="mobile">
+        </div>
+        <div class="content">
+            <div>
+                <div class="sub h4">活動時間</div>
+                <p class="normal">
+                    2024/07/09 預約開始 – 2024/09/01 12:00
+                </p>
+            </div>
+            <div>
+                <div class="sub h4">活動方式</div>
+                <p class="normal">
+                    1.於俠客召集活動專區，登入掘夢網會員<br>
+                    2.填寫正確之手機號碼(需可供聯繫)<br>
+                    3.點讚官方Facebook粉絲專頁<br>
+                    4.同意勾選隱私權政策<br>
+                    5.送出即可完成登錄，活動獎勵將於公測時陸續發放
+                </p>
+            </div>
+            <div class="list">
+                <div class="sub h4">活動獎勵</div>
+                <div class="normal">
+                    <div class="bgTop">
+                        <div class="bgTopL">
+                            <img src="img/items/stoveListLT.svg" alt="">
+                        </div>
+                        <div class="bgTopR">
+                            <img src="img/items/stoveListRT.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="photo">
+                            <img src="img/items/item_weapon.png" alt="">
+                            <span class="num small">1</span>
+                        </div>
+                        <div class="data"><i>◆紫郁炎雷劍</i>
+                            使用後可以獲得橙色品質坐騎紫郁炎雷劍，使用期限永久。
+                        </div>
+                    </div>
+                    <div class="bgBottom">
+                        <div class="bgBottomL">
+                            <img src="img/items/stoveListLB.svg" alt="">
+                        </div>
+                        <div class="bgBottomR">
+                            <img src="img/items/stoveListRB.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="list">
+                <div class="sub h4">加碼抽獎勵</div>
+                <div class="normal">
+                    <div class="bgTop">
+                        <div class="bgTopL">
+                            <img src="img/items/stoveListLT.svg" alt="">
+                        </div>
+                        <div class="bgTopR">
+                            <img src="img/items/stoveListRT.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="photo">
+                            <img src="img/items/item_iphone.png" alt="">
+                            <span class="num small">3</span>
+                        </div>
+                        <div class="data"><i>◆iPhone 15 PRO 512GB</i>
+                            參與事前預約成功，活動結束後加碼抽「iPhone 15 PRO 512GB」！共3名！
+                        </div>
+                    </div>
+                    <div class="bgBottom">
+                        <div class="bgBottomL">
+                            <img src="img/items/stoveListLB.svg" alt="">
+                        </div>
+                        <div class="bgBottomR">
+                            <img src="img/items/stoveListRB.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="sub h4">注意事項</div>
+                <ol class="normal">
+                    <li>本活動限定台灣、香港、澳門地區的玩家參與。一組手機號碼僅限參加一次事前預約。參加者請確保手機號碼填寫正確。參與預約活動即表示同意個人資料蒐集使用及接收簡訊。</li>
+                    <li>預約活動獎勵虛寶領取方式：前往掘夢網【領獎專區】選擇伺服器及角色名稱領取獎勵。</li>
+                    <li>本活動贈送的虛寶獎勵，無法折換現金或等值商品。</li>
+                    <li>玩家如因個人因素造成線路不穩、異常而無法正常參加活動，將無法額外進行補發獎勵。</li>
+                    <li>活動期間系統若發生問題，本公司保留變更或終止本活動時間、內容之權利。</li>
+                    <li>官方將保留變更活動內容及核准兌換與否之權利，詳細活動規則、獎勵及異動說明以網站或FB粉絲團公告的最後一次公佈為準。請玩家密切留意網站公告訊息。活動開始後，所有玩家視同同意最後公告之內容。
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div class="popUp" id="section3DesBlock">
+        <div class="close btn">
+            <img src="img/btn/cross.svg" alt="">
+        </div>
+        <div class="title h3">
+            <img src="img/title/titlePop.png" alt="">
+        </div>
+        <div class="content">
+            <div>
+                <div class="sub h4">活動時間</div>
+                <p class="normal">
+                    2024/07/09 預約開始 – 2024/09/01 12:00
+                </p>
+            </div>
+            <div>
+                <div class="sub h4">活動資格</div>
+                <p class="normal">
+                    擁有掘夢網會員帳號並完成「俠客召集事前預約」的用戶。
+                </p>
+            </div>
+            <div>
+                <div class="sub h4">活動方式</div>
+                <ol class="normal">
+                    <li>登入掘夢網帳號</li>
+                    <li>俠客每日登入後，皆能獲得1次對煉寶爐注入精力的機會(每日中午12:00重置)</li>
+                    <li>每對煉寶爐注入一次精力皆會隨機獲得1項獎勵</li>
+                    <li>當個人注入的精力達到30次時，即可獲得永久寵物【蛋蛋】</li>
+                    <li>當所有俠客注入煉寶爐的精力累積到一定值時，將解鎖實體獎勵</li>
+                    <li>每1個掘夢網帳號只會獲得1次蛋蛋寵物獎勵</li>
+                    <li>活動結束時，將根據實體獎勵解鎖情況，抽選有參加活動的俠客。每日注入天數越多，得獎機會就越高！</li>
+                </ol>
+            </div>
+            <div class="list">
+                <div class="sub h4">注入精力獎勵</div>
+                <div class="normal">
+                    <div class="bgTop">
+                        <div class="bgTopL">
+                            <img src="img/items/stoveListLT.svg" alt="">
+                        </div>
+                        <div class="bgTopR">
+                            <img src="img/items/stoveListRT.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="award">
+                            <div class="photo">
+                                <img src="img/items/01.png" alt="">
+                                <span class="num small">1</span>
+                            </div>
+                            <div class="data"><i>◆
+                                2級寶石袋</i>
+                                開啟後獲得綁定的2級寶石1個。
+                            </div>
+                        </div>
+                        <div class="award">
+                            <div class="photo">
+                                <img src="img/items/02.png" alt="">
+                                <span class="num small">1</span>
+                            </div>
+                            <div class="data"><i>◆
+                                粗糙的升星強化石</i>
+                                神魂升星1-10級所需消耗材料，強化後增加百分比基礎屬性。
+                            </div>
+                        </div>
+                        <div class="award">
+                            <div class="photo">
+                                <img src="img/items/03.png" alt="">
+                                <span class="num small">1</span>
+                            </div>
+                            <div class="data"><i>◆
+                                特製護身符袋-2星</i>
+                                打開後可隨機獲得2等級的護身符一張。
+                            </div>
+                        </div>
+                        <div class="award">
+                            <div class="photo">
+                                <img src="img/items/04.png" alt="">
+                                <span class="num small">1</span>
+                            </div>
+                            <div class="data"><i>◆
+                                神魂升星符</i>
+                                神魂升星的輔助材料，可以極大提高出現完美成功的機率。
+                            </div>
+                        </div>
+                        <div class="award">
+                            <div class="photo">
+                                <img src="img/items/05.png" alt="">
+                                <span class="num small">100</span>
+                            </div>
+                            <div class="data"><i>◆
+                                綁定元寶</i>
+                                獲得100綁定元寶。
+                            </div>
+                        </div>
+                        <div class="award">
+                            <div class="photo">
+                                <img src="img/items/06.png" alt="">
+                                <span class="num small">1</span>
+                            </div>
+                            <div class="data"><i>◆
+                                初級鑒定符</i>
+                                用於鑒定器魂附加屬性道具，可以少量提高成功率。
+                            </div>
+                        </div>
+                        <div class="award">
+                            <div class="photo">
+                                <img src="img/items/07.png" alt="">
+                                <span class="num small">1</span>
+                            </div>
+                            <div class="data"><i>◆
+                                粗糙青銅打孔器</i>
+                                為裝備增加第2個插槽。
+                            </div>
+                        </div>
+                        <div class="award">
+                            <div class="photo">
+                                <img src="img/items/08.png" alt="">
+                                <span class="num small">1</span>
+                            </div>
+                            <div class="data"><i>◆
+                                粗糙寶石鑲嵌符</i>
+                                可使2-4級寶石的成功率提升至100%。
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bgBottom">
+                        <div class="bgBottomL">
+                            <img src="img/items/stoveListLB.svg" alt="">
+                        </div>
+                        <div class="bgBottomR">
+                            <img src="img/items/stoveListRB.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="list">
+                <div class="sub h4">神器煉成獎勵</div>
+                <div class="normal">
+                    <div class="bgTop">
+                        <div class="bgTopL">
+                            <img src="img/items/stoveListLT.svg" alt="">
+                        </div>
+                        <div class="bgTopR">
+                            <img src="img/items/stoveListRT.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="item center">
+                        <div class="photo">
+                            <img src="img/items/item_pet.png" alt="">
+                            <span class="num small golden">1</span>
+                        </div>
+                        <p class="data"><i>◆
+                            蛋蛋</i>
+                            蛋蛋為靈氣法術型寵物，可對目標造成法術型傷害。
+                            <br>
+                            【開啟條件】<b>累積注入30次精力</b>
+                        </p>
+                    </div>
+                    <div class="bgBottom">
+                        <div class="bgBottomL">
+                            <img src="img/items/stoveListLB.svg" alt="">
+                        </div>
+                        <div class="bgBottomR">
+                            <img src="img/items/stoveListRB.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="list">
+                <div class="sub h4">全服煉成加碼抽</div>
+                <div class="normal">
+                    <div class="bgTop">
+                        <div class="bgTopL">
+                            <img src="img/items/stoveListLT.svg" alt="">
+                        </div>
+                        <div class="bgTopR">
+                            <img src="img/items/stoveListRT.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="item center">
+                        <div class="photo">
+                            <img src="img/items/mouse.png" alt="">
+                            <span class="num small green">2</span>
+                        </div>
+                        <p class="data"><i>◆
+                            steelseries aerox3 滑鼠</i>
+                            【全服目標精力<b>10,000</b>】
+                        </p>
+                    </div>
+                    <div class="item center">
+                        <div class="photo">
+                            <img src="img/items/keyboard.png" alt="">
+                            <span class="num small green">2</span>
+                        </div>
+                        <p class="data"><i>◆
+                            steelseries aerox3 鍵盤</i>
+                            【全服目標精力<b>20,000</b>】
+                        </p>
+                    </div>
+                    <div class="bgBottom">
+                        <div class="bgBottomL">
+                            <img src="img/items/stoveListLB.svg" alt="">
+                        </div>
+                        <div class="bgBottomR">
+                            <img src="img/items/stoveListRB.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="sub h4">獎勵發放方式</div>
+                <ol class="normal">
+                    <li>虛寶獎勵可前往官網【領獎專區】選擇伺服器及角色名稱領取獎勵。獎勵將透過信件方式發送。</li>
+                    <li>實體獎勵會於活動結束後隨機抽選「至少進行過1次」聚精煉神的玩家。且注入精力次數越多，抽選機率將會提升。</li>
+                </ol>
+            </div>
+            <div>
+                <div class="sub h4">注意事項</div>
+                <ol class="normal">
+                    <li>本活動限定完成事前預約的玩家參與。</li>
+                    <li>本活動贈送的虛寶獎勵，無法折換現金或等值商品。</li>
+                    <li>玩家如因個人因素造成線路不穩、異常而無法正常參加活動，將無法額外進行補發獎勵。</li>
+                    <li>活動期間系統若發生問題，本公司保留變更或終止本活動時間、內容之權利。</li>
+                    <li>官方將保留變更活動內容及核准兌換與否之權利，詳細活動規則、獎勵及異動說明以網站或FB粉絲團公告的最後一次公佈為準。請玩家密切留意網站公告訊息。活動開始後，所有玩家視同同意最後公告之內容。
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div class="popUp" id="recordBlock">
+        <div class="close btn">
+            <img src="img/btn/cross.svg" alt="">
+        </div>
+        <div class="title h3">
+            獎勵紀錄
+        </div>
+        <div class="content">
+            <div class="list">
+                <div class="normal">
+                    <div class="bgTop">
+                        <div class="bgTopL">
+                            <img src="img/items/stoveListLT.svg" alt="">
+                        </div>
+                        <div class="bgTopR">
+                            <img src="img/items/stoveListRT.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="center">
+                    </div>
+                    <div class="bgBottom">
+                        <div class="bgBottomL">
+                            <img src="img/items/stoveListLB.svg" alt="">
+                        </div>
+                        <div class="bgBottomR">
+                            <img src="img/items/stoveListRB.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popUp warning" id="warningBlock">
+        <div class="content">
+            <div class="bgTop">
+                <div class="bgTopL">
+                    <img src="img/items/stoveListLT.svg" alt="">
+                </div>
+                <div class="bgTopR">
+                    <img src="img/items/stoveListRT.svg" alt="">
+                </div>
+            </div>
+            <div class="center">
+                <p class="h4" id="warningText"></p>
+                <div class="btn close">關閉</div>
+            </div>
+            <div class="bgBottom">
+                <div class="bgBottomL">
+                    <img src="img/items/stoveListLB.svg" alt="">
+                </div>
+                <div class="bgBottomR">
+                    <img src="img/items/stoveListRB.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.6.0.min.js?v1.7"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/design.js?v3"></script>
+    <script>
+        $(document).ready(function() {
+            $(".owl-carousel").owlCarousel({
+                center: true,
+                loop: true,
+                margin: 0,
+                nav: true,
+                dots: true,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    600: {
+                        items: 2,
+                    },
+                    1000: {
+                        items: 2,
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

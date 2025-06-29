@@ -1,0 +1,44 @@
+$w:#FFF;
+$b:#000;
+$red:#960f0f;
+$brown:#42210b;
+$lightBrown:#c7b299;
+
+body{
+    font-family: "Yuji Boku", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.normal{
+    font-family: Arial,'Microsoft YaHei', Helvetica, sans-serif;
+}
+
+.flexRowSpace{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flexColumnSpace{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+*{
+    position: relative;
+    box-sizing: border-box;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+}
+
+img{
+    object-fit: contain;
+}

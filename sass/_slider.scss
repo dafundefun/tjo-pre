@@ -1,0 +1,224 @@
+
+.gallery_container {
+    width: 100%;
+    height: 570px;
+
+    .gallery_wrap{
+        width: 1322px;
+        height: 550px;
+        display: flex;
+    }
+    .front_side {
+        z-index: 5;
+        transform: translateX(25%) scale(1);
+    }
+
+    .gallery_item {
+        background: url('../../../img/event/homepage/section3swiperBG.png');
+        background-size: 880px 539px;
+        background-position: center center;
+        height: 539px;
+        width: 880px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img.show {
+            visibility: visible;
+        }
+
+        img {
+            width: 840px;
+            height: 500px;
+            visibility: hidden;
+            border-radius: 13px;
+        }
+    }
+
+    .threeD_gallery_item {
+        position: absolute;
+        // width: 100%;
+        // height: 100%;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+
+    .gallery_right_middle {
+        z-index: 1;
+        transform: translateX(65%) scale(0.7);
+
+        &:before {
+            content: "";
+            position: absolute;
+            width: 840px;
+            height: 500px;
+            background-color: black;
+            opacity: 0.5;
+            z-index: 1;
+        }
+    }
+
+    .gallery_out {
+        -webkit-transform: rotateY(0) translateX(0) translateZ(0) scale(0.6);
+        -moz-transform: rotateY(0) translateX(0) translateZ(0) scale(0.6);
+        -ms-transform: rotateY(0) translateX(0) translateZ(0) scale(0.6);
+        -o-transform: rotateY(0) translateX(0) translateZ(0) scale(0.6);
+        transform: rotateY(0) translateX(0) translateZ(0) scale(0.6);
+        z-index: -1;
+        opacity: 0 !important;
+    }
+
+    .gallery_left_middle {
+        z-index: 1;
+        transform: translateX(-15%) scale(0.7);
+        // transform: translateX(-365px) translateY(80px) scale(0.7);
+
+        &:before {
+            content: "";
+            position: absolute;
+            // top: 1px;
+            // left: 241px;
+            width: 840px;
+            height: 500px;
+            background-color: black;
+            opacity: 0.5;
+            z-index: 1;
+        }
+    }
+
+    .prev {
+        left: 0;
+        text-align: right;
+
+        img {
+            padding-right: 40px;
+        }
+    }
+
+    .next {
+        right: 0;
+        text-align: left;
+
+        img {
+            padding-left: 40px;
+        }
+    }
+
+    .prev,
+    .next {
+        width: 241px;
+        height: 349px;
+        background-color: rgb(255, 255, 255, .0);
+        border: none;
+        position: absolute;
+        top: 81px;
+        z-index: 2;
+        cursor: pointer;
+
+        &:hover {
+            img {
+                -webkit-filter: drop-shadow(0px 0px 7px rgba(255, 255, 255, 0.7));
+                filter: drop-shadow(0px 0px 7px rgba(255, 255, 255, 0.7))
+            }
+        }
+    }
+}
+.gallery_container {
+    width: 100%;
+    height: 570px;
+  }
+  .gallery_container .gallery_wrap {
+    width: 1322px;
+    height: 550px;
+    display: flex;
+  }
+  .gallery_container .front_side {
+    z-index: 5;
+    transform: translateX(25%) scale(1);
+  }
+  .gallery_container .gallery_item {
+    background: url("../../../img/event/homepage/section3swiperBG.png");
+    background-size: 880px 539px;
+    background-position: center center;
+    height: 539px;
+    width: 880px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .gallery_container .gallery_item img.show {
+    visibility: visible;
+  }
+  .gallery_container .gallery_item img {
+    width: 840px;
+    height: 500px;
+    visibility: hidden;
+    border-radius: 13px;
+  }
+  .gallery_container .threeD_gallery_item {
+    position: absolute;
+    transition: all 0.5s ease;
+  }
+  .gallery_container .gallery_right_middle {
+    z-index: 1;
+    transform: translateX(65%) scale(0.7);
+  }
+  .gallery_container .gallery_right_middle:before {
+    content: "";
+    position: absolute;
+    width: 840px;
+    height: 500px;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+  .gallery_container .gallery_out {
+    transform: rotateY(0) translateX(0) translateZ(0) scale(0.6);
+    z-index: -1;
+    opacity: 0 !important;
+  }
+  .gallery_container .gallery_left_middle {
+    z-index: 1;
+    transform: translateX(-15%) scale(0.7);
+  }
+  .gallery_container .gallery_left_middle:before {
+    content: "";
+    position: absolute;
+    width: 840px;
+    height: 500px;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+  .gallery_container .prev {
+    left: 0;
+    text-align: right;
+  }
+  .gallery_container .prev img {
+    padding-right: 40px;
+  }
+  .gallery_container .next {
+    right: 0;
+    text-align: left;
+  }
+  .gallery_container .next img {
+    padding-left: 40px;
+  }
+  .gallery_container .prev,
+  .gallery_container .next {
+    width: 241px;
+    height: 349px;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    position: absolute;
+    top: 81px;
+    z-index: 2;
+    cursor: pointer;
+  }
+  .gallery_container .prev:hover img,
+  .gallery_container .next:hover img {
+    filter: drop-shadow(0px 0px 7px rgba(255, 255, 255, 0.7));
+  }

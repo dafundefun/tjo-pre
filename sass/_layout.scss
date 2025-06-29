@@ -1,0 +1,333 @@
+.container{
+    width: 1600px;
+    min-height: 100vh;
+    margin: auto;
+    padding-bottom: 5rem;
+    @extend %flexColumnTop;
+    @include pc{
+        width: 1400px;
+    }
+    @include laptop{
+        width: 1200px;
+    }
+    @include padPro{
+        width: 100%;
+        padding: 0 20px;
+    }
+    @include pad{
+        padding: 0 10px;
+        .container>.title{
+            padding-top: 60px;
+        }
+    }
+    @include phoneLg{
+        padding: 0 20px;
+    }
+    @include phone{
+        padding: 0 10px;
+        min-height: 0;
+        .pc{
+            display: none;
+        }
+        .mobile{
+            display: block;
+        }
+    }
+    &>.content{
+        width: 100%;
+    }
+}
+
+.section{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    @include phone{
+        height: auto;
+        margin: 5vh auto;
+        min-height: 0;
+    }
+}
+
+.title{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 2rem;
+    img{
+        width: 40%;
+        max-width: 500px;
+        min-width: 270px;
+    }
+}
+
+
+.content{
+    @extend %flexRowCenter;
+    margin: auto;
+    @include padPro{
+        flex-direction: column-reverse;
+    }
+}
+
+
+.bgTop,.bgBottom{
+    @extend %flexRowCenter;
+    width: 100%;
+    height: 0.5rem;
+    .bgTopL,.bgBottomL{
+        margin-right: auto;
+    }
+    .bgTopR,.bgBottomR{
+        margin-left: auto;
+    }
+    img{
+        width: 1.5rem;
+        height: auto;
+    }
+    .bgTopL{
+        transform: translate(-75%,-75%);
+    }
+    .bgTopR{
+        transform: translate(75%,-75%);
+    }
+    .bgBottomL{
+        transform: translate(-75%,0);
+    }
+    .bgBottomR{
+        transform: translate(75%,0);
+    }
+}
+
+.btnGroup{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.btnRouded{
+    border-radius: 5px;
+    margin: 0 0.5rem;
+    padding: 0 2rem;
+    background-color: $b;
+    color: $w;
+    text-align: center;
+}
+
+.mobile{
+    display: none;
+}
+@include phone{
+    .mobile{
+        display: block;
+    }
+    .pc{
+        display: none;
+    }
+}
+
+.shine{
+    box-shadow: #ffc800 0 0 20px;
+}
+
+#getPet{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    line-height: 1.5;
+    background-color: rgba($b, 0.6);
+    text-align: center;
+    display: none;
+}
+
+
+.iframe-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* 使透明覆蓋層不干擾到 iframe 內容的點擊事件 */
+    z-index: 99; /* 確保覆蓋層在最上層 */
+}
+
+.popUpCover{
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba($b,0.8);
+    z-index: 998;
+}
+.popUp{
+    display: none;
+    width: 60vw;
+    min-width: 800px;
+    max-width: 1100px;
+    height: 80vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 0.5rem;
+    background-color: rgba($w,0.8);
+    box-shadow: rgba($b,0.8) 0 0 10px;
+    padding: 2rem;
+    overflow: hidden;
+    z-index: 999;
+    @include scrollBarChange;
+    &>.close{
+        position: absolute;
+        top: 0.5rem;
+        right: 0.5rem;
+        width: 1.5rem;
+        height: auto;
+        z-index: 10;
+    }
+    .title{
+        line-height: 1.5;
+        margin-bottom: 0;
+    }
+    .content{
+        @extend %flexColumnTop;
+        position: absolute;
+        left: 1rem;
+        right: 1rem;
+        top: 0;
+        bottom: 0;
+        padding-bottom: 2rem;
+        flex-wrap: nowrap;
+        overflow-y: scroll;
+        .sub{
+            text-align: center;
+            line-height: 2;
+        }
+        p,.data{
+            line-height: 1.5;
+            text-align: center;
+        }
+        &>div{
+            margin-bottom: 1rem;
+        }
+    }
+    .list{
+        width: 60%;
+        margin-bottom: 2rem;
+        .normal{
+            border: 1px solid $lightBrown;
+            &>div{
+                @extend %flexRowLeft;
+            }
+            .item{
+                margin: 0.5rem;
+                padding: 0.5rem;
+                background-color: rgba($lightBrown,0.8);
+                .photo{
+                    flex: 0;
+                    @extend %flexColumnCenter;
+                }
+                .data{
+                    flex: 1;
+                }
+            }
+        }
+    }
+    .num{
+        width: 100%;
+        line-height: 2;
+        text-align: center;
+        border-radius: 1rem;
+        background:linear-gradient(red,#bf3838, $b);
+        color:$w;
+        margin-top: 5px;
+        font-weight: bold;
+        &.green{
+            background: linear-gradient(#0d5115, #236119, $b);
+        }
+        &.golden{
+            color: $b;
+            background: linear-gradient(#fff193,#b68e3b, #fff193);
+        }
+    }
+    .data{
+        padding-left: 0.5rem;
+        i{
+            display: block;
+        }
+    }
+    ol{
+        width: 100%;
+        max-width: 800px;
+        line-height: 1.5;
+        li{
+            list-style: decimal inside;
+            margin-bottom: 0.5rem;
+        }
+    }
+    @include padPro{
+        width: 90vw;
+        min-width: 0;
+        .list{
+            width: 90% !important;
+            padding: 0.5rem;
+            
+        }
+    }
+    @include phone{
+        padding: 10px;
+        .data{
+            i{text-align: center;}
+        }
+    }
+}
+
+.popUp.warning{
+    height: auto;
+    width: 100%;
+    max-width: max-content;
+    min-width: 300px;
+    max-height: max-content;
+    padding: 1.5rem;
+    background: transparent;
+    box-shadow: none;
+    .content{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding-bottom: 0;
+        border: 1px solid rgba($lightBrown,0.8);
+        overflow: visible;
+        left: 0;
+        right: 0;
+        .bgTop,.bgBottom{
+            margin-bottom: 0;
+        }
+        .center{
+            width: calc(100% - 1rem);
+            min-width: 200px;
+            padding: 0.5rem 1rem;
+            background-color: rgba($lightBrown,0.8);
+            line-height: 2;
+            margin: 0;
+            @extend %flexColumnCenter;
+            .close{
+                margin-top: 1rem;
+                padding: 0 1em;
+                border-radius: 5px;
+                line-height: 2;
+                background-color: $brown;
+                color: rgba($lightBrown,0.8);
+                &:hover{
+                    color: $lightBrown;
+                }
+            }
+        }
+    }
+}

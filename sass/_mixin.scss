@@ -1,0 +1,174 @@
+// 手機
+$phone: 576px;
+$phoneLg: 768px;
+// 小平板
+$pad: 992px;
+// 大平板小筆電
+$padPro: 1180px;
+// 筆電
+$laptop: 1400px;
+//PC
+$pc: 1600px;
+
+
+@mixin phone{
+    @media screen and (max-width: $phone){
+        @content;
+    }
+}
+
+@mixin phoneLg{
+    @media screen and (max-width: $phoneLg){
+        @content;
+    }
+}
+@mixin pad{
+    @media screen and (max-width: $pad){
+        @content;
+    }
+}
+@mixin padPro{
+    @media screen and (max-width: $padPro){
+        @content;
+    }
+}
+@mixin laptop{
+    @media screen and (max-width: $laptop){
+        @content;
+    }
+}
+@mixin pc{
+    @media screen and (max-width: $pc){
+        @content;
+    }
+}
+
+%flexRowCenter{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+%flexColumnCenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+%flexColumnLeft{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+%flexColumnTop{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+%flexRowTop{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+%flexRowLeft{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@mixin scrollBarChange{
+    ::-webkit-scrollbar {
+        width: 7px;
+  
+    }
+    ::-webkit-scrollbar-button {
+        background: transparent;
+        border-radius: 4px;
+    }
+    ::-webkit-scrollbar-track-piece {
+        background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        background-color: rgba(0, 0, 0, 0.4);
+        border: 1px solid slategrey;
+    }
+    ::-webkit-scrollbar-track {
+        box-shadow: transparent;
+    }
+}
+
+@mixin bgContainCenter{
+    @content;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+@mixin bgChange{
+    background-repeat: no-repeat;
+    transition: all .3s;
+    &:hover{
+        @content;
+    }
+}
+
+@keyframes arrowDownAni{
+    0%{
+        background-image: url(../img/btn/arrow_down.png);
+        transform: translate(-50%,-20%);
+    }
+    75%{
+        background-image: url(../img/btn/arrow_down0.png);
+        transform: translate(-50%,0%);
+    }
+    100%{
+        background-image: url(../img/btn/arrow_down.png);
+        transform: translate(-50%,-20%);
+    }
+}
+
+@keyframes turnAround{
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pop{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes obtLink {
+    0%{
+        text-shadow: 0 0 5px #960f0f;
+    }
+    50%{
+        text-shadow: 0 0 5px red, 0 0 5px #960f0f, 0 0 10px #960f0f;
+    }
+    100%{
+        text-shadow: 0 0 5px #960f0f;
+    }
+}
